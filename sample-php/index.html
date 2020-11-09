@@ -1,0 +1,17 @@
+<html>
+<meta charset="UTF-8">
+<head>
+<title>OSコマンドインジェクション検証</title>
+</head>
+<body>
+<form action="nslookup.php" method="post">
+<table>
+<tr>
+<td>nslookupを行いたいIPアドレスまたはホスト名を入力してください</td>
+<td><input type="text" name="address"></td>
+</tr>
+</table>
+<input type="submit" value="nslookup実行">
+</form>
+</body>
+</html>

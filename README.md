@@ -35,7 +35,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.mycat
 
 catで開けて、mycatで開けないことを確認する。
 
-http://localhost:8000/sample-php/nslookup.html
+http://localhost:8000/sample-php/index.html
 
 「google.com; cat /etc/passwd」 # 開ける
 「google.com; mycat /etc/passwd」# 何も表示されない（実際はエラー出力だが、phpのshell_execは標準出力しか表示されないため）
@@ -58,6 +58,6 @@ http://localhost:8000/sample-php/nslookup.html
 
 6. 再度確認
 
-http://localhost:8000/sample-php/nslookup.html
+http://localhost:8000/sample-php/index.html
 
 「google.com; mycat /etc/passwd」 # 開ける
